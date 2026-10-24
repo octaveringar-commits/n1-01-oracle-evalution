@@ -1,0 +1,17 @@
+contrast,config,rel,ci_low,ci_high,p_exact,skew,significant,a_confirmer
+dJ_R,0,0.0,nan,nan,1.0,0.0,False,False
+dJ_R,1,0.0,nan,nan,1.0,0.0,False,False
+dJ_R,2,0.0,nan,nan,1.0,0.0,False,False
+dJ_R,3,0.0,nan,nan,1.0,0.0,False,False
+dJ_M,0,0.0,nan,nan,1.0,0.0,False,False
+dJ_M,1,0.0,nan,nan,1.0,0.0,False,False
+dJ_M,2,0.0,nan,nan,1.0,0.0,False,False
+dJ_M,3,0.0,nan,nan,1.0,0.0,False,False
+dJ_tot,0,-0.06405000000000001,-0.43775888258897616,-0.012798000000000021,1.0,-4.216880169989306,False,False
+dJ_tot,1,-0.06405000000000001,-0.43775888258897616,-0.012798000000000021,1.0,-4.216880169989306,False,False
+dJ_tot,2,-0.06405000000000001,-0.43775888258897616,-0.012798000000000021,1.0,-4.216880169989306,False,False
+dJ_tot,3,-0.06405000000000001,-0.43775888258897616,-0.012798000000000021,1.0,-4.216880169989306,False,False
+clair_vs_R,0,0.0,nan,nan,1.0,0.0,False,False
+clair_vs_R,1,0.0,nan,nan,1.0,0.0,False,False
+clair_vs_R,2,0.0,nan,nan,1.0,0.0,False,False
+clair_vs_R,3,0.0,nan,nan,1.0,0.0,False,False
