@@ -1,0 +1,101 @@
+{
+  "version": "N1-01 V1.3.3",
+  "issue": "C",
+  "a_confirmer": false,
+  "grid": [
+    {
+      "w0_gs_m": 0.022980970388562793,
+      "c_r": 3.141592653589793
+    },
+    {
+      "w0_gs_m": 0.022980970388562793,
+      "c_r": 3.86
+    },
+    {
+      "w0_gs_m": 0.0325,
+      "c_r": 3.141592653589793
+    },
+    {
+      "w0_gs_m": 0.0325,
+      "c_r": 3.86
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "epochs": 1000,
+  "code_sha256": "248b3dcf387043396881d2dc96612416577de0ce8a6386cd325ba6f2f8e32e3f",
+  "v19_sha256": "a8e6dcbb77b0a21b40530cf285b455b667dc8c3e9f6ba685de69376135c3f851",
+  "etsi_sha256": "19077f80420eb17519fcf6f83e2847d7a877940b134c5306814b8c6f60d8475d",
+  "significant": {
+    "dJ_R": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "dJ_M": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "dJ_tot": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "clair_vs_R": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "a_confirmer_par_contraste": {
+    "dJ_R": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "dJ_M": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "dJ_tot": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "clair_vs_R": [
+      false,
+      false,
+      false,
+      false
+    ]
+  }
+}
