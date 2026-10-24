@@ -1,8 +1,4 @@
 
-Dr. octave ringar <octaveringar@gmail.com>
-08:51 (il y a 5 minutes)
-À moi
-
 # N1-01 V1.3.3 — Clairvoyant Oracle Evaluation of Joint Relay–MCS Adaptation
 
 ## Description
