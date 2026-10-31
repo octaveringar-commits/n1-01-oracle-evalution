@@ -84,6 +84,30 @@ Expected SHA-256:
 
 Zenodo v1.0.0 (incomplete): https://doi.org/10.5281/zenodo.23612900. This release (v1.0.1) supersedes it.
 
+
+
+## Post hoc diagnostics
+
+The three scripts below were added in release v1.0.2. They lie **outside the prespecified protocol**: they do not modify the archived code, the campaign outputs or the contrasts, and they draw no new campaign result. They support Sections 3.4 and 3.5 of the manuscript.
+
+| Script | Purpose | SHA-256 |
+|---|---|---|
+| `geom_check.py` | Counts, for each seed, the epochs without any admissible relay (geometry only, no channel draw) and compares them with the archived outage counts in `runs.csv` | `5a6c386096773141ed0833ff5b6270c19829d6b7a7c84f9e6b087aebd326c00a` |
+| `seed15.py` | For seeds 2, 12 and 15: minimum zenith angle of the closest relay over the 100 s window, and number of epochs in which a relay lies within 60° but line of sight is blocked | `b4fd9398d9af0297d9d1352b48811d27edc1d02719658646088ef92fdaaea9b6` |
+| `margins.py` | Link margins: 0.1 % lower quantile of the epoch-mean E_s/N_0 relative to the rate-9/10 threshold (seed 0, 2,000 epochs, four configurations) | `2cf492a94198c694546fafc35dc7c16222520d9a53ff317d8c33f0d78bd46bf8` |
+
+Usage (`n1_oracle.py` expects `fso_env.py` in a sibling `v19/` folder):
+
+```
+mkdir -p run/n1 run/v19
+cp n1_oracle.py run/n1/ && cp fso_env.py run/v19/
+python geom_check.py run/n1 runs.csv
+python seed15.py run/n1
+python margins.py run/n1
+```
+
+Expected results: archived outages equal epochs without an admissible relay on every seed (158 for seed 2, 123 for seed 12, 1,000 for seed 15, 0 otherwise; 1,281 in total); uplink margins 30.7–40.6 dB over zenith angles 0–60°, inter-satellite margins 23.5–23.6 dB, direct-link margins 7.5–9.6 dB.
+
 ## License
 
 CC0-1.0.
